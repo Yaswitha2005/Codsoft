@@ -1,0 +1,27 @@
+def chatbot():
+    print("Hello! I'm a  chatbot. How can I help you today?")
+    
+    while True:
+        user_input = input("You: ").lower()
+        
+        if "hello" in user_input or "hi" in user_input:
+            print("Chatbot: Hello! How can I assist you?")
+        
+        elif "how are you" in user_input:
+            print("Chatbot: I'm just a program, but thanks for asking! How about you?")
+        
+        elif "help" in user_input:
+            print("Chatbot: Sure! What do you need help with?")
+        
+        elif "about artificial intelligence" in user_input:
+            print("Chatbot: Artificial intelligence (AI) is a field of study that focuses on developing machines that can perform tasks that typically require human intelligence. AI uses algorithms, data, and computational power to simulate human intelligence. ")
+        
+        elif "bye" in user_input or "exit" in user_input:
+            print("Chatbot: Goodbye! Have a great day!")
+            break
+        
+        else:
+            print("Chatbot: I'm not sure how to respond to that. Can you ask something else?")
+
+# Start the chatbot
+chatbot()
